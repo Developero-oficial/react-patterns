@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {NormalDevelopero} from './normal-developero';
+import {CustomHookDevelopero} from './custom-hook-developero';
 
 export const CustomHookPage = () => (
   <>
@@ -10,5 +11,6 @@ export const CustomHookPage = () => (
     <hr />
 
     <h3>Ejemplo con Custom Hook</h3>
+    <CustomHookDevelopero />
   </>
 );
