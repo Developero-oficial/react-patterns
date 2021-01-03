@@ -106,6 +106,10 @@ export const TodoList = () => {
   );
 };
 
+FinalTodo.Title = TodoTitle;
+FinalTodo.Form = TodoForm;
+FinalTodo.List = TodoList;
+
 FinalTodo.propTypes = {
   children: PropTypes.node.isRequired,
 };

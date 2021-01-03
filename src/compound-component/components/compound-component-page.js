@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {Todo} from './normal-todo';
-import {FinalTodo, TodoTitle, TodoForm, TodoList} from './final-todo';
+import {FinalTodo} from './final-todo';
 
 export const CompoundComponentPage = () => (
   <>
@@ -11,11 +11,11 @@ export const CompoundComponentPage = () => (
 
     <h2>Ejemplo con Compound Component</h2>
     <FinalTodo>
-      <TodoTitle>
+      <FinalTodo.Title>
         <h1>Compound Pattern :D</h1>
-      </TodoTitle>
-      <TodoForm />
-      <TodoList />
+      </FinalTodo.Title>
+      <FinalTodo.Form />
+      <FinalTodo.List />
     </FinalTodo>
   </>
 );
