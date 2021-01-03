@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {Button} from './normal-button';
+import {CustomButton} from './custom-button';
 
 export const ExtensibleStylesPage = () => (
   <>
@@ -9,5 +10,12 @@ export const ExtensibleStylesPage = () => (
     <hr />
 
     <h2>Ejemplo con Extensible Styles</h2>
+    <CustomButton
+      className="btn btn-success"
+      type="button"
+      style={{color: '#ff0000'}}
+    >
+      Click
+    </CustomButton>
   </>
 );
