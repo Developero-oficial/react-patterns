@@ -3,6 +3,7 @@ import React from 'react';
 import {FormWithRenderProps} from './form-with-render-props';
 import {FinalFormWithRenderProps} from './final-with-render-props';
 import {FormWithHoc} from './form-with-hoc';
+import {FormWithHook} from './form-with-hook';
 
 export const PropsGettersPage = () => {
   const onSubmit = values => alert(JSON.stringify(values));
@@ -78,8 +79,15 @@ export const PropsGettersPage = () => {
         )}
       </FinalFormWithRenderProps>
 
+      <hr />
+
       <h2>Ejemplo con Props Getters y HOC</h2>
       <FormWithHoc onSubmit={onSubmit} />
+
+      <hr />
+
+      <h2>Ejemplo con Props Getters y Custom Hook</h2>
+      <FormWithHook onSubmit={onSubmit} />
     </>
   );
 };
